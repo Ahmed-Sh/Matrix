@@ -15,7 +15,7 @@ class MatDet:
             indices = [[(i, j) for j in range(len(m))]for i in range(len(m))]
             self.minors = [[0 for j in range(len(m))]for i in range(len(m))]
             sign_mat = [[0 for j in range(len(m))]for i in range(len(m))]
-            # print(f"Indices = {indices}\nself.minors = {self.minors}\nself.sign_mat = {sign_mat}\n {('*') * 20} ")
+            # print(f"Indices = {indices}\nself.minors = {self.minors}\nsign_mat = {sign_mat}\n {('*') * 20} ")
             for coordinates in indices:
                 for x, y in coordinates:
                     element_sign = (-1) ** (x + y)
@@ -39,7 +39,7 @@ def det(m):
         indices = [[(i, j) for j in range(len(m))]for i in range(len(m))]
         minors = [[0  for j in range(len(m))]for i in range(len(m))]
         sign_mat = [[0  for j in range(len(m))]for i in range(len(m))]
-        # print(f"Indices = {indices}\nself.minors = {minors}\nself.sign_mat = {sign_mat}\n {('*') * 20} ")
+        # print(f"Indices = {indices}\nminors = {minors}\nsign_mat = {sign_mat}\n {('*') * 20} ")
         for coordinates in indices:
             for x, y in coordinates:
                 element_sign = (-1) ** (x + y)
