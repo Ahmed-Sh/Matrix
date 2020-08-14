@@ -5,7 +5,7 @@ class MatDet:
         self.minors = 0
 
     def det(self, m):
-        print(f"m = {[i for i in m]}")
+        print(f"m = {m}")
         print(f"len m =  {(len(m))}, len m[0] =  {len(m[0])}")
         if len(m) != len(m[0]):
             return "Invalid Operation: This operation works on square matrix only"
